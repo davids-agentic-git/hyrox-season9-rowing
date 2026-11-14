@@ -53,6 +53,8 @@ thead th[aria-sort="descending"] button::after { content: "\2193"; }
 tbody tr:hover { background: var(--row-hover); }
 tbody tr:last-child td { border-bottom: 0; }
 tr.live td:first-child { box-shadow: inset 3px 0 0 var(--warn-line); }
+table.compact { width: auto; min-width: min(100%, 760px); }
+.tnum { font-variant-numeric: tabular-nums; }
 td.num, th.num { font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
 td.center, th.center { text-align: center; }
 td.nowrap { white-space: nowrap; }
@@ -186,12 +188,6 @@ const DATA = {"asof":"2026-11-14","results":{"Men":[{"race":"Jakarta 2026","star
     if (st === "No results yet") return badge("No results yet", "live");
     return null;
   }
-  function noteText(r) {
-    var n = [];
-    if (r.tie) n.push("Time tied with further athletes at the 3rd/4th cut-off");
-    if (r.fast) n.push("Unusually fast vs. own SkiErg split, treat with caution");
-    return n.join(". ");
-  }
 
   /* ---------- header ---------- */
   document.getElementById("asof").textContent = fmtDate(D.asof);
@@ -209,22 +205,18 @@ const DATA = {"asof":"2026-11-14","results":{"Men":[{"race":"Jakarta 2026","star
     var rows = D.results[div];
     var state = { key: "row", dir: 1, q: "", status: "all" };
     var cols = [
-      { k: "race", label: "Race", val: function (r) { return r.start + r.race; }, cell: function (r) { return [r.race.replace(/ 2026$/, ""), r.live ? badge("Interim", "live") : null]; }, cls: "nowrap" },
-      { k: "start", label: "Date", val: function (r) { return r.start; }, cell: function (r) { return fmtDate(r.start); }, cls: "nowrap hide-sm" },
-      { k: "rank", label: "Rank in race", val: function (r) { return r.rank; }, cell: function (r) { return String(r.rank); }, cls: "center hide-sm" },
-      { k: "athlete", label: "Athlete", val: function (r) { return norm(r.athlete); }, cell: function (r) { return r.athlete; } },
+      { k: "row", label: "Row time", val: function (r) { return r.row; }, cell: function (r) { return fmtDur(r.row); }, cls: "center strong tnum" },
+      { k: "athlete", label: "Name", val: function (r) { return norm(r.athlete); }, cell: function (r) { return r.athlete; } },
       { k: "country", label: "Country", val: function (r) { return r.country; }, cell: function (r) { return r.country; }, cls: "center" },
-      { k: "age", label: "Age group", val: function (r) { return r.age; }, cell: function (r) { return r.age; }, cls: "center hide-md" },
-      { k: "row", label: "Row 1000m", val: function (r) { return r.row; }, cell: function (r) { return fmtDur(r.row); }, cls: "num strong" },
-      { k: "fin", label: "Finish time", val: function (r) { return r.fin; }, cell: function (r) { return fmtDur(r.fin, true); }, cls: "num" },
-      { k: "notes", label: "Notes", sortable: false, cell: noteText, cls: "notes hide-md" }
+      { k: "race", label: "Race", val: function (r) { return r.start + r.race; }, cell: function (r) { return [r.race.replace(/ 2026$/, ""), r.live ? badge("Interim", "live") : null]; }, cls: "nowrap" },
+      { k: "fin", label: "Finish time", val: function (r) { return r.fin; }, cell: function (r) { return fmtDur(r.fin, true); }, cls: "center tnum" }
     ];
     var search = h("input", { type: "search", placeholder: "Search race, athlete or country", "aria-label": "Search " + label });
     var sel = h("select", { "aria-label": "Filter by status" },
       h("option", { value: "all" }, "All races"), h("option", { value: "final" }, "Final results only"), h("option", { value: "interim" }, "Interim (live) only"));
     var count = h("span", { "class": "count", "aria-live": "polite" });
     var thead = h("thead"), tbody = h("tbody");
-    var table = h("table", null, thead, tbody);
+    var table = h("table", { "class": "compact" }, thead, tbody);
     var headRow = h("tr");
     var ths = {};
     cols.forEach(function (c) {
@@ -239,7 +231,7 @@ const DATA = {"asof":"2026-11-14","results":{"Men":[{"race":"Jakarta 2026","star
     panel.appendChild(h("div", { "class": "toolbar" }, search, sel, count));
     panel.appendChild(h("div", { "class": "tablewrap tall" }, table));
     if (msg) panel.appendChild(msg);
-    panel.appendChild(h("p", { "class": "note" }, "Rank in race is the position among that race's top 3 by Row time. Yellow marker = race weekend in progress (interim). Click a column heading to re-sort."));
+    panel.appendChild(h("p", { "class": "note" }, "Each race contributes its 3 fastest row times. Yellow marker = race weekend in progress (interim). Click a column heading to re-sort."));
 
     function groupEmpties(list) {
       var by = {};

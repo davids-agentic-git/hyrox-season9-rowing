@@ -1,0 +1,119 @@
+﻿n,race,city,country,venue,start,end,status,rowing_results
+1,Jakarta 2026,Jakarta,Indonesia,Nusantara International Convention Exhibition (NICE),2026-06-26,2026-06-27,Completed,Final
+2,Sydney 2026,Sydney,Australia,"Sydney Showground, 1 Showground Rd, Sydney Olympic Park, NSW 2127",2026-06-30,2026-07-04,Completed,Final
+3,Hangzhou 2026,Hangzhou,China,"353 Benjing Ave, Qianjiang Century City, Xiaoshan District, Hangzhou",2026-07-03,2026-07-04,Completed,Final
+4,New Delhi 2026,New Delhi,India,"Hall 1A+B, Yashobhoomi (IICC), Sector 25 Dwarka, Dwarka, New Delhi, Delhi, 110077",2026-07-23,2026-07-25,Completed,Final
+5,Chengdu 2026,Chengdu,China,"No. 198 Century City Road, Wuhou District, Chengdu, Sichuan Province, China",2026-07-31,2026-08-01,Completed,Final
+6,Istanbul 2026,Istanbul,Turkey,"Istanbul Fuar Merkezi, 34149 Bakırköy/İstanbul, Türkiye",2026-07-31,2026-08-01,Completed,Final
+7,Chiba 2026,Chiba,Japan,"Makuhari Messe, 2 Chome-1 Nakase, Mihama Ward, Chiba, 261-8550, Japan",2026-08-05,2026-08-08,Completed,Final
+8,Bangkok 2026,Bangkok,Thailand,"Queen Sirikit National Convention Center (QSNCC) - 60 Ratchadaphisek Rd, Khlong Toei, Bangkok 10110, Thailand",2026-08-12,2026-08-15,Completed,Final
+9,Cape Town 2026,Cape Town,South Africa,"Cape Town International Convention Centre (CTICC), Convention Square, 1 Lower Street, Cape Town, 8001, South Africa",2026-08-13,2026-08-15,Completed,Final
+10,Shenzhen 2026,Shenzhen,China,"NO.111 Fuhuasan Rd, Futian District, Shenzhen, China",2026-08-14,2026-08-15,Completed,Final
+11,Perth 2026,Perth,Australia,"Perth Convention & Exhibition Centre (PCEC) - 21 Mounts Bay Rd, Perth WA 6000, Australia",2026-08-20,2026-08-22,Completed,Final
+12,Santa Cruz de Tenerife 2026,Santa Cruz de Tenerife,Spain,"Avenida de la Constitución, 12 38005 Santa Cruz de Tenerife",2026-09-03,2026-09-05,Completed,Final
+13,Washington D.C. 2026,Washington D.C.,USA,"801 Allen Y. Lew Place NW, Washington, DC 20001",2026-09-03,2026-09-07,Completed,Final
+14,Acapulco 2026,Acapulco,Mexico,"Boulevard Barra Vieja, Plan de Los Amates No. 3, Colonia, 39931 Acapulco de Juárez, Gro.",2026-09-04,2026-09-06,Completed,Final
+15,Athens 2026,Athens,Greece,"Metropolitan Expo, Athens International Airport ""Eleftherios Venizelos"" – Building 603A",2026-09-04,2026-09-05,Completed,Final
+16,Beijing 2026,Beijing,China,"Speed Skating Oval North Road, Chaoyang District, Beijing",2026-09-09,2026-09-12,Completed,Final
+17,Maastricht 2026,Maastricht,Netherlands,"MECC Maastricht, Forum 100, 6229 GV Maastricht",2026-09-16,2026-09-19,Completed,Final
+18,Mumbai 2026,Mumbai,India,"Hall 6, NESCO Center, Western Express Hwy, NESCO, Goregaon East, Mumbai, Maharashtra 400063",2026-09-16,2026-09-19,Completed,Final
+19,Izmir 2026,Izmir,Turkey,"Fuar İzmir, Zafer SB Mh, Şht. Süleyman Ergin Cd. No:2, 35410 Gaziemir/İzmir",2026-09-18,2026-09-18,Completed,Final
+20,Salt Lake City 2026,Salt Lake City,USA,"90 South West Temple Salt Lake City, UT 84101",2026-09-18,2026-09-20,Completed,Final
+21,Rome 2026,Rome,Italy,Ingresso EST - Via A.G. Eiffel (traversa Via Portuense),2026-09-22,2026-09-26,Completed,Final
+22,Oslo 2026,Oslo,Norway,"NOVA Spektrum, Messeveien 8, 2004 Lillestrøm, Norway",2026-09-24,2026-09-26,Completed,Final
+23,Bordeaux 2026,Bordeaux,France,"Cr Jules Ladoumegue, 33300 Bordeaux",2026-09-29,2026-10-03,Completed,Final
+24,Karlsruhe 2026,Karlsruhe,Germany,"Messe Karlsruhe (Halle 3), Messeallee 1, 76287 Rheinstetten, Germany",2026-09-30,2026-10-03,Completed,Final
+25,Toronto 2026,Toronto,Canada,"100 Princes' Blvd, Toronto, ON M6K 3C3, Canada",2026-10-01,2026-10-04,Completed,Final
+26,Boston 2026,Boston,USA,"415 Summer St, Boston, MA 02210",2026-10-08,2026-10-11,Completed,Final
+27,Geneva 2026,Geneva,Switzerland,"Palexpo Geneva (Hall 4 + 5), Rte Francois-Peyrot 30, Grand Saconnex, Switzerland",2026-10-08,2026-10-10,Completed,Final
+28,Gdansk 2026,Gdansk,Poland,"AmberExpo, Żaglowa 11, 80-560 Gdańsk, Poland",2026-10-09,2026-10-10,Completed,Final
+29,Valencia 2026,Valencia,Spain,"Av. de les Fires, s/n, Pobles de l'Oest, 46035 València, Valencia, España",2026-10-14,2026-10-17,Completed,Final
+30,Budapest 2026,Budapest,Hungary,"Budapest, Albertirsai út 10, 1101 Hungary, GATE 3",2026-10-16,2026-10-16,Completed,Final
+31,São Paulo 2026,São Paulo,Brazil,"Av. Olavo Fontoura, 1209 - Santana, São Paulo - SP, 02001-900",2026-10-17,2026-10-18,Completed,Final
+32,Abu Dhabi 2026,Abu Dhabi,United Arab Emirates,"ADNEC Centre Abu Dhabi,  Al Khaleej Al Arabi St - Al Rawdah - W59 01 - Abu Dhabi - United Arab Emirates",2026-10-22,2026-10-24,Completed,Final
+33,Tampa 2026,Tampa,USA,"333 S Franklin St, Tampa, FL 33602",2026-10-22,2026-10-25,Completed,Final
+34,Birmingham 2026,Birmingham,UK,"NEC - Pendigo Way, Marston Green, Birmingham B40 1NT",2026-10-27,2026-11-01,Completed,Final
+35,Hamburg 2026,Hamburg,Germany,"Hamburg Messe (B6), Karolinenstraße, Hamburg, Germany",2026-10-27,2026-10-31,Completed,Final
+36,Nice 2026,Nice,France,"Parv. de l'Europe, 06000 Nice",2026-10-28,2026-10-31,Completed,Final
+37,Mexico City 2026,Mexico City,Mexico,"Av. del Conscripto 311, Lomas de Sotelo, Hipódromo de las Américas, Miguel Hidalgo, 11610 Ciudad de México, CDMX",2026-10-29,2026-11-01,Completed,Final
+38,Barcelona 2026,Barcelona,Spain,"Av. Joan Carles I, 64, 08908 Barcelona, España",2026-11-10,2026-11-14,Live (race weekend in progress),Interim (race weekend in progress)
+39,Düsseldorf 2026,Düsseldorf,Germany,"Entrance South, Arena-Straße 1, 40474 Düsseldorf, Germany",2026-11-10,2026-11-14,Live (race weekend in progress),Interim (race weekend in progress)
+40,Dublin 2026,Dublin,Ireland,"Royal Dublin Society (RDS), Simmonscourt Road, Ballsbridge, Dublin, D04 E6N6",2026-11-11,2026-11-15,Live (race weekend in progress),Interim (race weekend in progress)
+41,Denver 2026,Denver,USA,Stockyards Event Center,2026-11-12,2026-11-15,Live (race weekend in progress),Interim (race weekend in progress)
+42,Seoul 2026,Seoul,South Korea,"KINTEX (Korea International Exhibition Center), 217-60, Kintex-ro, Ilsanseo-gu, Goyang-si, Gyeonggi-do, 10390, South Korea",2026-11-12,2026-11-14,Live (race weekend in progress),Interim (race weekend in progress)
+43,Cairo 2026,Cairo,Cairo,"Egypt's International Exhibition Center Hall 4, El-Moshir Tantawy Axis, Al Hay Al Asher, Nasr City, Cairo Governorate 4440510, Egypt",2026-11-13,2026-11-14,Live (race weekend in progress),None yet
+44,Dallas 2026,Dallas,USA,Halls B & C,2026-11-18,2026-11-22,Upcoming,None yet
+45,Guangzhou 2026,Guangzhou,China,"No. 1000 Xinggang East Road, Haizhu District, Guangzhou, China",2026-11-19,2026-11-21,Upcoming,Not yet raced
+46,Poznan 2026,Poznan,Poland,"Poznań International Fair, Głogowska 14 street, 60-734 Poznań",2026-11-19,2026-11-21,Upcoming,Not yet raced
+47,Rio de Janeiro 2026,Rio de Janeiro,Brazil,"Av. Salvador Allende, 6555 - Barra Olímpica, Rio de Janeiro - RJ, 22783-127",2026-11-21,2026-11-22,Upcoming,Not yet raced
+48,Gandhinagar 2026,Gandhinagar,India,"Helipad Exhibition Center, Gandhinagar, Gujarat",2026-11-25,2026-11-27,Upcoming,Not yet raced
+49,Johannesburg 2026,Johannesburg,South Africa,"Johannesburg Expo Centre, Nasrec Road, Corner Rand Show Road, Johannesburg, 2091, South Africa",2026-11-25,2026-11-28,Upcoming,Not yet raced
+50,Singapore 2026,Singapore,Singapore,"Singapore EXPO - 1 Expo Dr, Singapore 486150",2026-11-25,2026-11-28,Upcoming,Not yet raced
+51,Utrecht 2026,Utrecht,Netherlands,"Jaarbeurs Utrecht, Jaarbeursplein 6, 3521 AL Utrecht",2026-11-25,2026-11-29,Upcoming,Not yet raced
+52,Dubai 2026,Dubai,United Arab Emirates,"Dubai Exhibition Centre (DEC), Boulevard 2020 Madinat Al Mataar, Dubai, United Arab Emirates",2026-11-26,2026-11-27,Upcoming,Not yet raced
+53,London 2026,London,UK,"ExCel - 1 Western Gateway, Royal Victoria Dock, London, E16 1XL",2026-12-02,2026-12-06,Upcoming,Not yet raced
+54,Anaheim 2026,Anaheim,USA,Anaheim Convention Center,2026-12-03,2026-12-06,Upcoming,Not yet raced
+55,Milan 2026,Milan,Italy,"Viale Porta Ovest, 20017 Rho (Metropolitan City of Milan), Italy",2026-12-03,2026-12-05,Upcoming,Not yet raced
+56,Sanya 2026,Sanya,China,"No. 33 Jianglin Road, Haitang District, Sanya",2026-12-04,2026-12-05,Upcoming,Not yet raced
+57,Melbourne 2026,Melbourne,Australia,"Melbourne Convention and Exhibition Centre - 1 Convention Centre Pl, South Wharf VIC 3006, Australia",2026-12-08,2026-12-12,Upcoming,Not yet raced
+58,Frankfurt 2026,Frankfurt,Germany,"Messe Frankfurt (Hall 3.1), Ludwig-Erhard-Anlage 1, 60327 Frankfurt, Germany",2026-12-09,2026-12-12,Upcoming,Not yet raced
+59,Kuala Lumpur 2026,Kuala Lumpur,Malaysia,"Malaysia International Trade and Exhibition Centre - Kompleks MITEC, 8, Jalan Dutamas 2, Kompleks Kerajaan, 50480 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia",2026-12-09,2026-12-12,Upcoming,Not yet raced
+60,Nashville 2026,Nashville,USA,"201 Rep. John Lewis Way S, Nashville, TN 37203",2026-12-09,2026-12-13,Upcoming,Not yet raced
+61,Stockholm 2026,Stockholm,Sweden,"Strawberry Arena, Råsta Strandväg 1,  169 79 Solna, Sweden.",2026-12-09,2026-12-12,Upcoming,Not yet raced
+62,Paris 2026,Paris,France,"1 Place de la Porte de Versailles, 75015 Paris",2026-12-11,2026-12-19,Upcoming,Not yet raced
+63,Ghent 2026,Ghent,Belgium,"Flanders Expo, Maaltekouter 1, 9051 Gent, Belgium",2026-12-16,2026-12-19,Upcoming,Not yet raced
+64,Helsinki 2026,Helsinki,Finland,"Messukeskus Helsinki - Expo and Convention Centre, Messuaukio 1 street, ZIP - 00520, Helsinki, Finland",2026-12-17,2026-12-19,Upcoming,Not yet raced
+65,Vancouver 2026,Vancouver,Canada,"Halls A, B, & C",2026-12-17,2026-12-20,Upcoming,Not yet raced
+66,Hong Kong 2027,Hong Kong,China,"Asiaworld-Expo, 1 Airport Expo Blvd, Chek Lap Kok, Hong Kong",2027-01-06,2027-01-09,Upcoming,Not yet raced
+67,Greater Noida 2027,Greater Noida,India,"IEML (India Expo Mart), Knowledge Park II, Greater Noida, Uttar Pradesh",2027-01-14,2027-01-16,Upcoming,Not yet raced
+68,Manchester 2027,Manchester,UK,"Manchester Central Convention Complex, Windmill Street, M2 3GX",2027-01-20,2027-01-31,Upcoming,Not yet raced
+69,Osaka 2027,Osaka,Japan,"INTEX Osaka, Suminoe-ku, Osaka, Osaka Prefecture, Japan",2027-01-20,2027-01-24,Upcoming,Not yet raced
+70,Amsterdam 2027,Amsterdam,Netherlands,"Europaplein 24, 1078 GZ Amsterdam",2027-01-21,2027-01-30,Upcoming,Not yet raced
+71,Verona 2027,Verona,Italy,"Fiera di Verona - Viale del Lavoro, 8, 37135, Verona (VR)",2027-01-27,2027-01-30,Upcoming,Not yet raced
+72,Toulouse 2027,Toulouse,France,"MEETT Parc des Expositions - Av. Concorde, 31840 Toulouse",2027-02-02,2027-02-06,Upcoming,Not yet raced
+73,Auckland 2027,Auckland,New Zealand,"Auckland Showgrounds - 217 Green Lane West, Epsom, Auckland 1051, New Zealand",2027-02-03,2027-02-06,Upcoming,Not yet raced
+74,Bilbao 2027,Bilbao,Spain,"Azkue Kalea, 1, 48902 San Vicente de Barakaldo, Bizkaia",2027-02-05,2027-02-06,Upcoming,Not yet raced
+75,Bangkok 2027,Bangkok,Thailand,"Bangkok International Trade & Exhibition Centre - 88 Debaratna Rd, Bang Na Tai, Bang Na, Bangkok 10260, Thailand",2027-02-10,2027-02-13,Upcoming,Not yet raced
+76,Basel 2027,Basel,Switzerland,"Messe Basel, Messeplatz 10, 4005 Basel, Switzerland",2027-02-11,2027-02-13,Upcoming,Not yet raced
+77,Chicago 2027,Chicago,USA,"600 E Grand Ave, Chicago, IL 60611",2027-02-11,2027-02-15,Upcoming,Not yet raced
+78,Katowice 2027,Katowice,Poland,"International Congress Centre, Plac Sławika i Antalla 1 40-163 Katowice, Poland",2027-02-18,2027-02-20,Upcoming,Not yet raced
+79,Vienna 2027,Vienna,Austria,"Vienna Congress and Convention Center, Hall A, Trabrennstraße 7, 1020 Vienna, Austria",2027-02-18,2027-02-20,Upcoming,Not yet raced
+80,Cancún 2027,Cancún,Mexico,"Av. Rbla. Fonatur, Zona Hotelera, 77500 Cancún, Q.R., México",2027-02-19,2027-02-21,Upcoming,Not yet raced
+81,Phoenix 2027,Phoenix,USA,"1 Cardinals Drive, Glendale, Arizona, USA",2027-02-25,2027-02-28,Upcoming,Not yet raced
+82,Mechelen 2027,Mechelen,Belgium,"Plattebeekstraat 1, 2800 Mechelen, Belgium",2027-03-02,2027-03-06,Upcoming,Not yet raced
+83,Hanoi 2027,Hanoi,Vietnam,"Vietnam Exposition Center, Tu Lien Bridge Road, Dong Hoi Commune, Dong Anh District, Hanoi, Vietnam",2027-03-05,2027-03-06,Upcoming,Not yet raced
+84,Santiago 2027,Santiago,Chile,TBA,2027-03-06,2027-03-06,Upcoming,Not yet raced
+85,Glasgow 2027,Glasgow,UK,"Scottish Event Campus (SEC), Exhibition Way, Glasgow G3 8YW",2027-03-10,2027-03-14,Upcoming,Not yet raced
+86,Taipei 2027,Taipei,Taiwan,"Taipei Nangang Exhibition Centre, Hall 1, No.1, Jingmao 2nd Rd., Nangang District, Taipei City 11568, Taiwan",2027-03-11,2027-03-13,Upcoming,Not yet raced
+87,Las Vegas 2027,Las Vegas,USA,"3150 Paradise Rd, Las Vegas, NV 89109",2027-03-12,2027-03-14,Upcoming,Not yet raced
+88,Madrid 2027,Madrid,Spain,"Av. del Partenón, 5, Barajas, 28042 Madrid",2027-03-16,2027-03-20,Upcoming,Not yet raced
+89,Guadalajara 2027,Guadalajara,Mexico,"Av. Mariano Otero 1499, Verde Valle, 44550 Guadalajara, Jal., México",2027-03-19,2027-03-21,Upcoming,Not yet raced
+90,Buenos Aires 2027,Buenos Aires,Argentina,"Av. Sarmiento 2704, C1425 Cdad. Autónoma de Buenos Aires, Argentina",2027-03-20,2027-03-21,Upcoming,Not yet raced
+91,Cape Town 2027,Cape Town,South Africa,"Convention Square, 1 Lower long street, Cape Town City Centre, Cape Town, 8001",2027-03-24,2027-03-27,Upcoming,Not yet raced
+92,Copenhagen 2027,Copenhagen,Denmark,"Bella Center, Center Blvd. 5, 2300 København, Denmark",2027-03-24,2027-03-27,Upcoming,Not yet raced
+93,Miami 2027,Miami,USA,"1901 Convention Ctr Dr, Miami Beach, FL 33139, USA",2027-03-26,2027-03-28,Upcoming,Not yet raced
+94,Brisbane 2027,Brisbane,Australia,"Brisbane Convention & Exhibition Centre, Merivale St, South Brisbane QLD 4101",2027-03-30,2027-04-04,Upcoming,Not yet raced
+95,Rotterdam 2027,Rotterdam,Netherlands,"Ahoyweg 10, 3084 BA Rotterdam, Netherlands",2027-03-31,2027-04-03,Upcoming,Not yet raced
+96,Bari 2027,Bari,Italy,Nuova Fiera del Levante,2027-04-01,2027-04-03,Upcoming,Not yet raced
+97,Houston 2027,Houston,USA,"NRG Park, 1 Fannin St, Houston, TX 77054, USA",2027-04-01,2027-04-04,Upcoming,Not yet raced
+98,Warsaw 2027,Warsaw,Poland,"PGE Narodowy, Prince Józef Poniatowski Avenue 1, Warsaw, 03-901, Poland",2027-04-06,2027-04-10,Upcoming,Not yet raced
+99,Cologne 2027,Cologne,Germany,"Koelnmesse/FIBO, Messeplatz 1, Hall 10.1. - Entrance East, 50679 Cologne, Germany",2027-04-07,2027-04-10,Upcoming,Not yet raced
+100,Paris 2027,Paris,France,"3 Avenue Winston-Churchill, 75008, Paris",2027-04-07,2027-04-11,Upcoming,Not yet raced
+101,Malaga 2027,Malaga,Spain,"Palacio de Ferias y Congresos, Av. de José Ortega y Gasset, 201, Cruz de Humilladero, 29006 Málaga",2027-04-14,2027-04-17,Upcoming,Not yet raced
+102,Helsinki 2027,Helsinki,Finland,"Helsinki Expo and Convention Centre, Messuaukio 1, 00520 Helsinki, Finland",2027-04-15,2027-04-17,Upcoming,Not yet raced
+103,Nagoya 2027,Nagoya,Japan,"Port Messe Nagoya Exhibition Hall - 3 Chome-2-1 Kinjofuto, Minato Ward, Nagoya, Aichi 455-0848, Japan",2027-04-15,2027-04-17,Upcoming,Not yet raced
+104,Monterrey 2027,Monterrey,Mexico,"Av Fundidora 501, Obrera, 64010 Monterrey, N.L., México",2027-04-16,2027-04-18,Upcoming,Not yet raced
+105,Ottawa 2027,Ottawa,Canada,VENUE INFORMATION COMING SOON,2027-04-21,2027-04-25,Upcoming,Not yet raced
+106,Atlanta 2027,Atlanta,USA,"285 Andrew Young International Blvd NW, Atlanta, GA 30313",2027-04-23,2027-04-25,Upcoming,Not yet raced
+107,Krakow 2027,Krakow,Poland,"EXPO Kraków, Galicyjska 9 street, 31-586 Kraków, Poland",2027-05-06,2027-05-08,Upcoming,Not yet raced
+108,Minneapolis 2027,Minneapolis,USA,"401 Chicago Ave, Minneapolis, MN 55415, USA",2027-05-07,2027-05-09,Upcoming,Not yet raced
+109,São Paulo 2027,São Paulo,Brazil,TBA,2027-05-08,2027-05-09,Upcoming,Not yet raced
+110,Lyon 2027,Lyon,France,"Bd de l'Europe, 69680 Chassieu",2027-05-11,2027-05-15,Upcoming,Not yet raced
+111,Incheon 2027,Incheon,South Korea,"Songdo Convensia Convention Center - South Korea, Incheon, Yeonsu-gu, Songdo-dong, Central-ro, 123 컨벤시아 M01",2027-05-12,2027-05-15,Upcoming,Not yet raced
+112,San Diego 2027,San Diego,USA,"111 Harbor Dr, San Diego, CA 92101, USA",2027-05-13,2027-05-16,Upcoming,Not yet raced
+113,Bengaluru 2027,Bengaluru,India,"Bangalore International Exhibition Centre (BIEC) Hall 4 BIEC, 10th Mile, Tumkur Road 562162 Bengaluru",2027-05-18,2027-05-22,Upcoming,Not yet raced
+114,Cardiff 2027,Cardiff,UK,"Principality Stadium, Westgate St, Cardiff, CF10 1NS",2027-05-19,2027-05-28,Upcoming,Not yet raced
+115,Portland 2027,Portland,USA,"777 NE Martin Luther King Jr Blvd, Portland, OR 97232",2027-05-21,2027-05-23,Upcoming,Not yet raced
+116,Rimini 2027,Rimini,Italy,"Fiera di Rimini, Via Costantino il Grande, 47921, Rimini (RN)",2027-05-26,2027-05-29,Upcoming,Not yet raced
+117,Riga 2027,Riga,Latvia,"Ķīpsala International Exhibition Centre Ķīpsalas iela 8, Kurzemes rajons, Rīga, LV-1048, Latvia",2027-05-27,2027-05-29,Upcoming,Not yet raced
+118,World Championships 2027,Hong Kong,China,"Asiaworld-Expo, 1 Airport Expo Blvd, Chek Lap Kok, Hong Kong",2027-06-09,2027-06-12,Upcoming,Not yet raced

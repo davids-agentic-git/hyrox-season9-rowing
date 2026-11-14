@@ -1,0 +1,27 @@
+﻿race,division,race_day,athlete,country,row_1000m,finish_time,reason
+New Delhi 2026,Women,Sunday,Richa Talreja,IND,3:06,02:09:41,faster than plausibility floor (3:20)
+Chiba 2026,Men,Thursday,Yuma Takeuchi,JPN,2:49,01:10:22,faster than plausibility floor (3:00)
+Shenzhen 2026,Men,Saturday,喆 夏,CHN,0:22,02:16:29,faster than plausibility floor (3:00)
+Shenzhen 2026,Men,Saturday,Jan Ho,MAC,1:09,02:18:16,faster than plausibility floor (3:00)
+Shenzhen 2026,Men,Saturday,浩翔 孙,CHN,3:36,02:11:48,row = 62% of own SkiErg time (5:50); inconsistent
+Shenzhen 2026,Women,Sunday,雅薇 单,CHN,3:10,01:29:57,faster than plausibility floor (3:20)
+Perth 2026,Men,Friday,cameron lockley,AUS,0:21,01:20:08,faster than plausibility floor (3:00)
+Perth 2026,Men,Friday,Chris McDiarmid,AUS,2:01,01:34:28,faster than plausibility floor (3:00)
+Maastricht 2026,Men,Saturday,(entire day - 1130 athletes),,,,Faulty row station: median of the 25 fastest row splits that day was 2:50 vs. a typical 4:18; whole day ignored
+Maastricht 2026,Men,Thursday,Douwe Talma,NED,1:19,01:12:35,faster than plausibility floor (3:00)
+Maastricht 2026,Women Pro,Friday,Esmee Van Breevoort,NED,2:54,01:24:40,faster than plausibility floor (3:20)
+Maastricht 2026,Women Pro,Friday,Hanna Blömer,GER,2:55,01:25:59,faster than plausibility floor (3:20)
+Maastricht 2026,Women Pro,Friday,Lisa Moradi,GER,3:04,01:30:24,faster than plausibility floor (3:20)
+Maastricht 2026,Women Pro,Friday,Anja Jacobs,NED,3:10,01:44:51,faster than plausibility floor (3:20)
+Maastricht 2026,Women Pro,Friday,Fiona Charlotte Wienen,GER,3:12,01:29:17,faster than plausibility floor (3:20)
+Maastricht 2026,Women Pro,Friday,Maxime Karman,NED,3:13,01:34:13,faster than plausibility floor (3:20)
+Maastricht 2026,Women Pro,Friday,Sarah Berger,NED,3:15,01:31:21,faster than plausibility floor (3:20)
+Maastricht 2026,Women Pro,Friday,Bluma Hazenberg,NED,3:19,01:40:40,faster than plausibility floor (3:20)
+Valencia 2026,Women,Friday,Giulia Vignoni,HUN,2:54,01:26:40,faster than plausibility floor (3:20)
+Tampa 2026,Women,Friday,Amanda Nordstrom,USA,0:27,01:56:09,faster than plausibility floor (3:20)
+Abu Dhabi 2026,Men Pro,Saturday,Ignacio Alvarez Iturriaga,ESP,2:15,01:00:42,faster than plausibility floor (3:00)
+Birmingham 2026,Men,Friday,Jack Baxter,IRL,2:22,01:16:56,faster than plausibility floor (3:00)
+Birmingham 2026,Men,Tuesday,Joseph Murphy,GBR,3:15,,row = 62% of own SkiErg time (5:17); inconsistent
+Hamburg 2026,Men,Wednesday,Carlos Kleiner,GER,0:51,01:36:37,faster than plausibility floor (3:00)
+Mexico City 2026,Women,Sunday,Josbell Denisse Gómez Sánchez,MEX,3:47,01:42:17,row = 69% of own SkiErg time (5:31); inconsistent
+Seoul 2026,Men,Saturday,승현 권,KOR,0:28,01:21:10,faster than plausibility floor (3:00)

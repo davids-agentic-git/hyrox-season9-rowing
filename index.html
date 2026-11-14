@@ -47,7 +47,6 @@ h3 { font-size: 1rem; margin: 20px 0 6px; }
 .toolbar input[type=search] { flex: 1 1 220px; max-width: 340px; }
 .count { color: var(--muted); font-size: .88rem; margin-left: auto; }
 .tablewrap { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: auto; box-shadow: var(--shadow); }
-.tablewrap.tall { max-height: 72vh; }
 table { border-collapse: collapse; width: 100%; font-size: .92rem; }
 th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
 thead th { position: sticky; top: 0; background: var(--surface); z-index: 1; white-space: nowrap; font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); box-shadow: inset 0 -1px 0 var(--line); border-bottom: 0; }
@@ -59,7 +58,6 @@ thead th[aria-sort="descending"] button::after { content: "\2193"; }
 tbody tr:hover { background: var(--row-hover); }
 tbody tr:last-child td { border-bottom: 0; }
 tr.live td:first-child { box-shadow: inset 3px 0 0 var(--warn-line); }
-table.compact { width: auto; min-width: min(100%, 760px); }
 .tnum { font-variant-numeric: tabular-nums; }
 td.num, th.num { font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
 td.center, th.center { text-align: center; }
@@ -87,7 +85,7 @@ footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--line);
 footer a, .prose a { color: var(--accent); }
 .downloads a { margin-right: 14px; white-space: nowrap; }
 @media (max-width: 860px) { .hide-md { display: none; } }
-@media (max-width: 620px) { .hide-sm { display: none; } th, td { padding: 7px 8px; } body { font-size: 14px; } .tablewrap.tall { max-height: 68vh; } }
+@media (max-width: 620px) { .hide-sm { display: none; } th, td { padding: 7px 8px; } body { font-size: 14px; } }
 @media print { .tabs, .toolbar, .pills { display: none; } .panel[hidden] { display: block; } .tablewrap { max-height: none; overflow: visible; } }
 </style>
 </head>
@@ -220,7 +218,7 @@ const DATA = {"asof":"2026-11-14","results":{"Men":[{"race":"Jakarta 2026","star
     var search = h("input", { type: "search", placeholder: "Search race, athlete or country", "aria-label": "Search " + label });
     var count = h("span", { "class": "count", "aria-live": "polite" });
     var thead = h("thead"), tbody = h("tbody");
-    var table = h("table", { "class": "compact" }, thead, tbody);
+    var table = h("table", null, thead, tbody);
     var headRow = h("tr");
     var ths = {};
     cols.forEach(function (c) {
@@ -233,7 +231,7 @@ const DATA = {"asof":"2026-11-14","results":{"Men":[{"race":"Jakarta 2026","star
     var empties = D.empty[div];
     var msg = empties.length ? h("p", { "class": "note" }, "Not shown: " + groupEmpties(empties) + ".") : null;
     panel.appendChild(h("div", { "class": "toolbar" }, search, count));
-    panel.appendChild(h("div", { "class": "tablewrap tall" }, table));
+    panel.appendChild(h("div", { "class": "tablewrap" }, table));
     if (msg) panel.appendChild(msg);
     panel.appendChild(h("p", { "class": "note" }, "Each race contributes its 3 fastest row times. Yellow marker = race weekend in progress (interim). Click a column heading to re-sort."));
 
@@ -352,7 +350,7 @@ const DATA = {"asof":"2026-11-14","results":{"Men":[{"race":"Jakarta 2026","star
     var heads = ["#", "Race", "City", "Country", "Venue", "Start", "End", "Status", "Rowing results"];
     var table = h("table", null, h("thead", null, h("tr", null, heads.map(function (x, i) { return h("th", { scope: "col", "class": i === 0 ? "num" : (i === 4 ? "hide-md" : (i === 2 || i === 3 ? "hide-sm" : false)) }, x); }))), tbody);
     panel.appendChild(h("div", { "class": "toolbar" }, search, sel, count));
-    panel.appendChild(h("div", { "class": "tablewrap tall" }, table));
+    panel.appendChild(h("div", { "class": "tablewrap" }, table));
     panel.appendChild(h("p", { "class": "note" }, "Dates are the race weekend (first to last day). Status is as of the data date."));
     function stBadge(s) {
       if (s.indexOf("Live") === 0) return badge("Live", "live");

@@ -34,6 +34,12 @@ h3 { font-size: 1rem; margin: 20px 0 6px; }
 .tabs button { appearance: none; border: 0; background: none; color: var(--muted); font: inherit; font-weight: 600; padding: 10px 14px; cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -1px; border-radius: 8px 8px 0 0; }
 .tabs button:hover { color: var(--text); }
 .tabs button[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
+.stats[hidden] { display: none; }
+@media (max-width: 760px) {
+  .tabs { flex-wrap: nowrap; overflow-x: auto; overflow-y: hidden; scrollbar-width: none; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tabs button { flex: 0 0 auto; white-space: nowrap; margin-bottom: 0; }
+}
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .panel[hidden] { display: none; }
 .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 10px; }
@@ -90,7 +96,6 @@ footer a, .prose a { color: var(--accent); }
   <header>
     <h1>HYROX Season 9: fastest 1000m Row splits</h1>
     <p class="sub">Top 3 row times per race and category for Season 9 (labelled "Season 26/27" on the official site), compiled from the public results lists. Data as of <span id="asof"></span>.</p>
-    <ul class="stats" id="stats"></ul>
   </header>
 
   <div class="tabs" role="tablist" aria-label="Views">
@@ -102,6 +107,7 @@ footer a, .prose a { color: var(--accent); }
     <button role="tab" id="tab-races" aria-controls="races" aria-selected="false">Race Calendar</button>
     <button role="tab" id="tab-method" aria-controls="method" aria-selected="false">Method &amp; notes</button>
   </div>
+  <ul class="stats" id="stats" hidden></ul>
 
   <section class="panel" id="men-open" role="tabpanel" aria-labelledby="tab-men-open"></section>
   <section class="panel" id="men-pro" role="tabpanel" aria-labelledby="tab-men-pro" hidden></section>
@@ -203,7 +209,7 @@ const DATA = {"asof":"2026-11-14","results":{"Men":[{"race":"Jakarta 2026","star
   function divisionPanel(id, div, label) {
     var panel = document.getElementById(id);
     var rows = D.results[div];
-    var state = { key: "row", dir: 1, q: "", status: "all" };
+    var state = { key: "row", dir: 1, q: "" };
     var cols = [
       { k: "row", label: "Row time", val: function (r) { return r.row; }, cell: function (r) { return fmtDur(r.row); }, cls: "center strong tnum" },
       { k: "athlete", label: "Name", val: function (r) { return norm(r.athlete); }, cell: function (r) { return r.athlete; } },
@@ -212,8 +218,6 @@ const DATA = {"asof":"2026-11-14","results":{"Men":[{"race":"Jakarta 2026","star
       { k: "fin", label: "Finish time", val: function (r) { return r.fin; }, cell: function (r) { return fmtDur(r.fin, true); }, cls: "center tnum" }
     ];
     var search = h("input", { type: "search", placeholder: "Search race, athlete or country", "aria-label": "Search " + label });
-    var sel = h("select", { "aria-label": "Filter by status" },
-      h("option", { value: "all" }, "All races"), h("option", { value: "final" }, "Final results only"), h("option", { value: "interim" }, "Interim (live) only"));
     var count = h("span", { "class": "count", "aria-live": "polite" });
     var thead = h("thead"), tbody = h("tbody");
     var table = h("table", { "class": "compact" }, thead, tbody);
@@ -228,7 +232,7 @@ const DATA = {"asof":"2026-11-14","results":{"Men":[{"race":"Jakarta 2026","star
     thead.appendChild(headRow);
     var empties = D.empty[div];
     var msg = empties.length ? h("p", { "class": "note" }, "Not shown: " + groupEmpties(empties) + ".") : null;
-    panel.appendChild(h("div", { "class": "toolbar" }, search, sel, count));
+    panel.appendChild(h("div", { "class": "toolbar" }, search, count));
     panel.appendChild(h("div", { "class": "tablewrap tall" }, table));
     if (msg) panel.appendChild(msg);
     panel.appendChild(h("p", { "class": "note" }, "Each race contributes its 3 fastest row times. Yellow marker = race weekend in progress (interim). Click a column heading to re-sort."));
@@ -255,8 +259,6 @@ const DATA = {"asof":"2026-11-14","results":{"Men":[{"race":"Jakarta 2026","star
     function render() {
       var q = norm(state.q);
       var list = rows.filter(function (r) {
-        if (state.status === "final" && r.live) return false;
-        if (state.status === "interim" && !r.live) return false;
         return !q || norm(r.race + " " + r.athlete + " " + r.country).indexOf(q) !== -1;
       });
       list = list.map(function (r, i) { return [r, i]; }).sort(function (x, y) {
@@ -277,7 +279,6 @@ const DATA = {"asof":"2026-11-14","results":{"Men":[{"race":"Jakarta 2026","star
       count.textContent = list.length + " of " + rows.length + " entries · sorted by " + colLabel;
     }
     search.addEventListener("input", function () { state.q = search.value; render(); });
-    sel.addEventListener("change", function () { state.status = sel.value; render(); });
     render();
   }
 
@@ -403,6 +404,8 @@ const DATA = {"asof":"2026-11-14","results":{"Men":[{"race":"Jakarta 2026","star
 
   /* ---------- tabs ---------- */
   var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+  var DIVISION_TABS = ["men-open", "men-pro", "women-open", "women-pro"];
+  var statsEl = document.getElementById("stats");
   function select(id, focus) {
     var found = false;
     tabs.forEach(function (t) {
@@ -412,7 +415,9 @@ const DATA = {"asof":"2026-11-14","results":{"Men":[{"race":"Jakarta 2026","star
       t.tabIndex = on ? 0 : -1;
       document.getElementById(t.getAttribute("aria-controls")).hidden = !on;
       if (on && focus) t.focus();
+      if (on && t.scrollIntoView) t.scrollIntoView({ block: "nearest", inline: "center" });
     });
+    if (found) statsEl.hidden = DIVISION_TABS.indexOf(id) !== -1;
     return found;
   }
   tabs.forEach(function (t, i) {
